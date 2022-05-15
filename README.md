@@ -12,7 +12,7 @@
 
 ## POST /accounts/register
 
-Add an Merchant Account to DB
+Add a Merchant Account to DB
 
 - **URL Params**
   none
@@ -112,7 +112,7 @@ Show List Account
 
 ## POST products/add
 
-Add Product to Merchant
+Add Product
 
 - **URL Params**
   none

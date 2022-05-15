@@ -4,7 +4,7 @@
 
 ![Architecture Diagram](./erd-diagram/diagram.jpg "Architecture Diagram")
 
-# ERD of the merchant service data model
+# ERD of the merchant service 
 
 ![Merchant Service ERD!](./erd-diagram/erd.png "Merchant Service ERD")
 

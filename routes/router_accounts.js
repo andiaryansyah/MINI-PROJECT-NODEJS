@@ -42,7 +42,7 @@ router.post("/accounts/register", signupValidation, (req, res, next) => {
     `SELECT * FROM accounts WHERE name = (${db.escape(req.body.name)});`,
     (err, result) => {
       if (result.length) {
-        return res.status(409).send({
+        return res.status(401).send({
           msg: "This user is already in use!",
         });
       } else {

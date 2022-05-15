@@ -9,7 +9,7 @@ router.get("/products", (req, res) => {
   });
 });
 
-router.post("/products",  (req, res, next) => {
+router.post("/products/add",  (req, res, next) => {
   db.query(
     `SELECT * FROM products WHERE id_product = (${db.escape(req.body.id_product)});`,
     (err, result) => {
@@ -62,7 +62,7 @@ router.delete("/products", function (req, res) {
             return res.send({
               error: false,
               data: results,
-              message: "User has been deleted successfully.",
+              message: "Product has been deleted successfully.",
             });
           }
         );
@@ -92,7 +92,7 @@ router.put("/products", function (req, res) {
             return res.send({
               error: false,
               data: results,
-              message: "User has been update successfully.",
+              message: "Product has been update successfully.",
             });
           }
         );

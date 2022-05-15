@@ -6,7 +6,7 @@
 
 # ERD of the merchant service 
 
-![Merchant Service ERD!](./erd-diagram/erd.png "Merchant Service ERD")
+![Merchant Service ERD!](./erd-diagram/ "Merchant Service ERD")
 
 # API Contract
 

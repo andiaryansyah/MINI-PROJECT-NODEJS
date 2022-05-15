@@ -2,7 +2,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-// const indexRouter = require("./router.js");
+const rAccounts = require("./routes/router_accounts");
+const rProducts = require("./routes/router_products");
 
 const app = express();
 
@@ -18,7 +19,8 @@ app.use(
 
 app.use(cors());
 
-// app.use("/", indexRouter);
+app.use("/", rAccounts);
+app.use("/", rProducts);
 
 app.use((err, req, res, next) => {
   err.statusCode = err.statusCode || 400;
